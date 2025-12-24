@@ -1,0 +1,240 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Nosotros | LabMiners">
+    <!-- Hero Header (Matched to Services Page) -->
+    <div class="relative bg-brand-surface py-24">
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute inset-0 bg-brand-surface opacity-90"></div>
+        </div>
+        <div
+            class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
+        >
+            <h1
+                class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl"
+            >
+                Nosotros
+            </h1>
+            <p class="mt-6 max-w-2xl mx-auto text-xl text-gray-300">
+                Comprometidos con la excelencia y la innovación en la industria
+                minera.
+            </p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-24">
+            <!-- Section 1: Sobre Minares (Layout matches ServicesList Item) -->
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <!-- Image Side -->
+                <div class="w-full lg:w-1/2">
+                    <div
+                        class="relative rounded-2xl overflow-hidden shadow-2xl group"
+                    >
+                        <div
+                            class="absolute inset-0 bg-brand-primary/20 group-hover:bg-transparent transition-colors duration-500 z-10"
+                        >
+                        </div>
+                        <img
+                            src="/images/via_seca.png"
+                            alt="Equipo Minares"
+                            class="w-full h-80 lg:h-[28rem] object-cover transform transition-transform duration-700 group-hover:scale-105"
+                        />
+                    </div>
+                </div>
+
+                <!-- Content Side -->
+                <div class="w-full lg:w-1/2 space-y-6">
+                    <div class="flex items-center space-x-4">
+                        <div
+                            class="p-3 bg-brand-primary rounded-lg text-white shadow-lg"
+                        >
+                            <svg
+                                class="h-8 w-8"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                ><path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"
+                                ></path></svg
+                            >
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-900">
+                            Sobre Minares
+                        </h3>
+                    </div>
+
+                    <p class="text-lg text-gray-600 leading-relaxed text-left">
+                        En Minares, nos dedicamos a proporcionar soluciones
+                        mineras integrales de alta calidad. Con años de
+                        experiencia en la industria, nuestro equipo de expertos
+                        está comprometido con la excelencia y la innovación.
+                    </p>
+                    <p class="text-lg text-gray-600 leading-relaxed text-left">
+                        Nuestra misión es optimizar las operaciones mineras de
+                        nuestros clientes, mejorando la eficiencia y la
+                        seguridad en cada proyecto que emprendemos. Trabajamos
+                        con las últimas tecnologías y metodologías para
+                        garantizar resultados excepcionales en todos nuestros
+                        servicios.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Section 2: Filosofía Empresarial (Cards style matching Features box) -->
+            <div>
+                <div class="text-center mb-12">
+                    <h2
+                        class="text-3xl font-extrabold text-gray-900 sm:text-4xl"
+                    >
+                        Filosofía Empresarial
+                    </h2>
+                    <div
+                        class="mt-4 w-24 h-1 bg-brand-primary mx-auto rounded-full"
+                    >
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8">
+                    <!-- Vision -->
+                    <div
+                        class="bg-gray-50 p-6 md:p-8 rounded-2xl border-t-4 border-brand-primary shadow-lg hover:shadow-xl transition-shadow duration-300"
+                    >
+                        <div
+                            class="w-12 h-12 md:w-14 md:h-14 bg-brand-primary rounded-lg text-white flex items-center justify-center mb-4 md:mb-6 shadow-md"
+                        >
+                            <svg
+                                class="w-6 h-6 md:w-8 md:h-8"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                ><path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                                ></path><path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                                ></path></svg
+                            >
+                        </div>
+                        <h3
+                            class="text-xl md:text-2xl font-bold text-gray-900 mb-3 md:mb-4"
+                        >
+                            Visión
+                        </h3>
+                        <p
+                            class="text-sm md:text-base text-gray-600 leading-relaxed text-left"
+                        >
+                            Ser una empresa líder en el Perú, especializada en
+                            brindar apoyo a la industria minera, cuenta con un
+                            moderno laboratorio en Análisis Químico de
+                            Minerales, y ser el aliado estratégico más
+                            importante de nuestros clientes.
+                        </p>
+                    </div>
+
+                    <!-- Mission -->
+                    <div
+                        class="bg-gray-50 p-6 md:p-8 rounded-2xl border-t-4 border-brand-primary shadow-lg hover:shadow-xl transition-shadow duration-300"
+                    >
+                        <div
+                            class="w-12 h-12 md:w-14 md:h-14 bg-brand-primary rounded-lg text-white flex items-center justify-center mb-4 md:mb-6 shadow-md"
+                        >
+                            <svg
+                                class="w-6 h-6 md:w-8 md:h-8"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                ><path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg
+                            >
+                        </div>
+                        <h3
+                            class="text-xl md:text-2xl font-bold text-gray-900 mb-3 md:mb-4"
+                        >
+                            Misión
+                        </h3>
+                        <p
+                            class="text-sm md:text-base text-gray-600 leading-relaxed text-justify"
+                        >
+                            Hacer que nuestros clientes cumplan con sus
+                            objetivos, mediante el concurso de profesionales de
+                            primer nivel, altamente motivados, creativos e
+                            innovadores, ofreciendo las mejores soluciones en
+                            Análisis Químico.
+                        </p>
+                    </div>
+
+                    <!-- Values -->
+                    <div
+                        class="bg-gray-50 p-6 md:p-8 rounded-2xl border-t-4 border-brand-primary shadow-lg hover:shadow-xl transition-shadow duration-300"
+                    >
+                        <div
+                            class="w-12 h-12 md:w-14 md:h-14 bg-brand-primary rounded-lg text-white flex items-center justify-center mb-4 md:mb-6 shadow-md"
+                        >
+                            <svg
+                                class="w-6 h-6 md:w-8 md:h-8"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                ><path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                ></path></svg
+                            >
+                        </div>
+                        <h3
+                            class="text-xl md:text-2xl font-bold text-gray-900 mb-3 md:mb-4"
+                        >
+                            Valores
+                        </h3>
+                        <p
+                            class="text-sm md:text-base text-gray-600 leading-relaxed text-left"
+                        >
+                            {
+                                [
+                                    "Capacidad",
+                                    "Responsabilidad",
+                                    "Dedicación",
+                                    "Honestidad",
+                                    "Respeto",
+                                ].map((value) => (
+                                    <li class="flex items-center text-gray-600">
+                                        <svg
+                                            class="w-5 h-5 text-brand-primary mr-3"
+                                            fill="none"
+                                            stroke="currentColor"
+                                            viewBox="0 0 24 24"
+                                        >
+                                            <path
+                                                stroke-linecap="round"
+                                                stroke-linejoin="round"
+                                                stroke-width="2"
+                                                d="M5 13l4 4L19 7"
+                                            />
+                                        </svg>
+                                        <span class="font-medium">{value}</span>
+                                    </li>
+                                ))
+                            }
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</Layout>

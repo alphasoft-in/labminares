@@ -1,0 +1,31 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ServicesList from "../components/ServicesList";
+---
+
+<Layout title="Servicios | Labminares">
+    <!-- Hero Header -->
+    <div class="relative bg-brand-surface py-24">
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute inset-0 bg-brand-surface opacity-90"></div>
+        </div>
+        <div
+            class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
+        >
+            <h1
+                class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl"
+            >
+                Nuestros Servicios
+            </h1>
+            <p class="mt-6 max-w-2xl mx-auto text-xl text-gray-300">
+                Tecnología de punta y experiencia técnica para brindar
+                resultados precisos y confiables.
+            </p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <ServicesList client:load />
+    </main>
+</Layout>

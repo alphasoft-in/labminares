@@ -1,0 +1,28 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ServicesSlider from "../components/ServicesSlider";
+import ServicesGrid from "../components/ServicesGrid";
+import LocationsSection from "../components/LocationsSection";
+---
+
+<Layout title="LabMinares - Inicio">
+	<main>
+		<ServicesSlider client:load />
+
+		{/* Rest of the content, if any needed, can go below */}
+		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+			<div class="text-center">
+				<h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+					Nuestros Servicios
+				</h2>
+				<p class="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
+					Ofrecemos una amplia gama de análisis de laboratorio y
+					servicios metalúrgicos.
+				</p>
+			</div>
+			<ServicesGrid />
+		</div>
+
+		<LocationsSection client:visible />
+	</main>
+</Layout>

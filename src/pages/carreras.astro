@@ -1,0 +1,255 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Carreras | LabMiners">
+    <!-- Hero Header (Matched to Services Page) -->
+    <div class="relative bg-brand-surface py-24">
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="absolute inset-0 bg-brand-surface opacity-90"></div>
+        </div>
+        <div
+            class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
+        >
+            <h1
+                class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl"
+            >
+                Carreras
+            </h1>
+            <p class="mt-6 max-w-2xl mx-auto text-xl text-gray-300">
+                Únete a nuestro equipo y construyamos juntos el futuro de la
+                minería.
+            </p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
+            <!-- Section 1: Intro (Layout matches ServicesList Item) -->
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <!-- Image Side -->
+                <div class="w-full lg:w-1/2">
+                    <div
+                        class="relative rounded-2xl overflow-hidden shadow-2xl group"
+                    >
+                        <div
+                            class="absolute inset-0 bg-brand-primary/20 group-hover:bg-transparent transition-colors duration-500 z-10"
+                        >
+                        </div>
+                        <img
+                            src="/images/lima_office.png"
+                            alt="Equipo Minares"
+                            class="w-full h-80 lg:h-[28rem] object-cover transform transition-transform duration-700 group-hover:scale-105"
+                        />
+                    </div>
+                </div>
+
+                <!-- Content Side -->
+                <div class="w-full lg:w-1/2 space-y-6">
+                    <div class="flex items-center space-x-4">
+                        <div
+                            class="p-3 bg-brand-primary rounded-lg text-white shadow-lg"
+                        >
+                            <svg
+                                class="h-8 w-8"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                ><path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                                ></path></svg
+                            >
+                        </div>
+                        <h3 class="text-3xl font-bold text-gray-900">
+                            Trabaja con Nosotros
+                        </h3>
+                    </div>
+
+                    <p class="text-lg text-gray-600 leading-relaxed text-left">
+                        En Minares, creemos que nuestro mayor activo es nuestra
+                        gente. Fomentamos un ambiente de trabajo colaborativo,
+                        innovador y seguro, donde cada miembro del equipo tiene
+                        la oportunidad de crecer profesionalmente y contribuir
+                        al éxito de nuestros clientes.
+                    </p>
+                    <p class="text-lg text-gray-600 leading-relaxed text-left">
+                        Buscamos talento apasionado por la industria minera, con
+                        ganas de aprender y de enfrentar nuevos desafíos. Si
+                        compartes nuestros valores de excelencia e integridad,
+                        queremos conocerte.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Section 2: Beneficios (Cards style matching Features box) -->
+            <div>
+                <div class="text-center mb-12">
+                    <h2
+                        class="text-3xl font-extrabold text-gray-900 sm:text-4xl"
+                    >
+                        ¿Por qué Minares?
+                    </h2>
+                    <div
+                        class="mt-4 w-24 h-1 bg-brand-primary mx-auto rounded-full"
+                    >
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8">
+                    <!-- Growth -->
+                    <div
+                        class="bg-gray-50 p-6 md:p-8 rounded-2xl border-t-4 border-brand-primary shadow-lg hover:shadow-xl transition-shadow duration-300"
+                    >
+                        <div
+                            class="w-12 h-12 md:w-14 md:h-14 bg-brand-primary rounded-lg text-white flex items-center justify-center mb-4 md:mb-6 shadow-md"
+                        >
+                            <svg
+                                class="w-6 h-6 md:w-8 md:h-8"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                ><path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"
+                                ></path></svg
+                            >
+                        </div>
+                        <h3
+                            class="text-xl md:text-2xl font-bold text-gray-900 mb-3 md:mb-4"
+                        >
+                            Crecimiento Profesional
+                        </h3>
+                        <p
+                            class="text-sm md:text-base text-gray-600 leading-relaxed text-left"
+                        >
+                            Ofrecemos oportunidades continuas de capacitación y
+                            desarrollo, permitiéndote alcanzar tu máximo
+                            potencial y avanzar en tu carrera dentro de la
+                            organización.
+                        </p>
+                    </div>
+
+                    <!-- Innovation -->
+                    <div
+                        class="bg-gray-50 p-6 md:p-8 rounded-2xl border-t-4 border-brand-primary shadow-lg hover:shadow-xl transition-shadow duration-300"
+                    >
+                        <div
+                            class="w-12 h-12 md:w-14 md:h-14 bg-brand-primary rounded-lg text-white flex items-center justify-center mb-4 md:mb-6 shadow-md"
+                        >
+                            <svg
+                                class="w-6 h-6 md:w-8 md:h-8"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                ><path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                                ></path></svg
+                            >
+                        </div>
+                        <h3
+                            class="text-xl md:text-2xl font-bold text-gray-900 mb-3 md:mb-4"
+                        >
+                            Innovación Constante
+                        </h3>
+                        <p
+                            class="text-sm md:text-base text-gray-600 leading-relaxed text-left"
+                        >
+                            Trabajamos con tecnología de punta y metodologías
+                            modernas. Fomentamos la creatividad y la búsqueda de
+                            nuevas soluciones para los desafíos de la industria.
+                        </p>
+                    </div>
+
+                    <!-- Culture -->
+                    <div
+                        class="bg-gray-50 p-6 md:p-8 rounded-2xl border-t-4 border-brand-primary shadow-lg hover:shadow-xl transition-shadow duration-300"
+                    >
+                        <div
+                            class="w-12 h-12 md:w-14 md:h-14 bg-brand-primary rounded-lg text-white flex items-center justify-center mb-4 md:mb-6 shadow-md"
+                        >
+                            <svg
+                                class="w-6 h-6 md:w-8 md:h-8"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                                ><path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    stroke-width="2"
+                                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                ></path></svg
+                            >
+                        </div>
+                        <h3
+                            class="text-xl md:text-2xl font-bold text-gray-900 mb-3 md:mb-4"
+                        >
+                            Cultura de Excelencia
+                        </h3>
+                        <p
+                            class="text-sm md:text-base text-gray-600 leading-relaxed text-left"
+                        >
+                            Nos guiamos por altos estándares éticos y de
+                            calidad. Valoramos el respeto, la honestidad y el
+                            trabajo en equipo como pilares fundamentales de
+                            nuestra organización.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div
+                class="bg-brand-surface rounded-3xl overflow-hidden shadow-2xl relative"
+            >
+                <div
+                    class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"
+                >
+                </div>
+                <div class="relative z-10 px-6 py-16 md:px-12 text-center">
+                    <h2
+                        class="text-3xl md:text-4xl font-extrabold text-white mb-6"
+                    >
+                        ¿Listo para el siguiente paso?
+                    </h2>
+                    <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-10">
+                        Si estás interesado en formar parte de nuestro equipo,
+                        envíanos tu CV y carta de presentación. Estamos siempre
+                        en búsqueda de nuevos talentos.
+                    </p>
+
+                    <a
+                        href="mailto:info@labminares.com?subject=Postulaci%C3%B3n%20Laboral%20-%20[Tu%20Nombre]"
+                        class="inline-flex items-center justify-center px-8 py-4 border border-transparent text-lg font-bold rounded-full text-brand-primary bg-white hover:bg-gray-100 transform hover:scale-105 transition-all duration-300 shadow-lg"
+                    >
+                        <svg
+                            class="w-5 h-5 mr-3"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                            ><path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                stroke-width="2"
+                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                            ></path></svg
+                        >
+                        Enviar CV
+                    </a>
+
+                    <p class="mt-6 text-sm text-gray-400">
+                        Correo: info@labminares.com
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+</Layout>
