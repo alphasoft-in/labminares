@@ -56,7 +56,7 @@ const Footer = () => {
                         <ul className="space-y-4">
                             <li className="flex items-start">
                                 <FontAwesomeIcon icon={faMapMarkerAlt} className="h-5 w-5 mr-3 text-brand-primary mt-0.5" />
-                                <span className="text-sm text-gray-400">Av Marcos Farfan 3377 - Independencia - Lima</span>
+                                <span className="text-sm text-gray-400">Calle Marcos Farfan 3377, Independencia - Lima</span>
                             </li>
                             <li className="flex items-center">
                                 <FontAwesomeIcon icon={faPhone} className="h-4 w-4 mr-3 text-brand-primary" />

@@ -8,7 +8,7 @@ const locations = [
         id: 1,
         name: 'Lima',
         image: '/images/lima_office.png',
-        address: 'Av Marcos Farfan 3377 - Independencia - Lima',
+        address: 'Calle Marcos Farfan 3377, Independencia - Lima',
         phone: '+51 967 605 686',
         email: 'informeslima@minares.com.pe',
         whatsapp: '51967605686'
