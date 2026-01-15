@@ -1,15 +1,17 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt, faPhone, faEnvelope, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 
 const locations = [
     {
         id: 1,
         name: 'Lima',
         image: '/images/lima_office.png',
-        address: 'Av. Simón Bolivar N° 147 Pueblo Libre - Lima',
+        address: 'Av Marcos Farfan 3377 - Independencia - Lima',
         phone: '+51 967 605 686',
-        email: 'informeslima@minares.com.pe'
+        email: 'informeslima@minares.com.pe',
+        whatsapp: '51967605686'
     },
     {
         id: 2,
@@ -17,7 +19,8 @@ const locations = [
         image: '/images/nazca_office.png',
         address: 'Av. Panamericana - Sur Urb. Vista Alegre Mz. K - Lt. 11A',
         phone: '+51 986 635 088',
-        email: 'informesnasca@minares.com.pe'
+        email: 'informesnasca@minares.com.pe',
+        whatsapp: '51986635088'
     },
     {
         id: 3,
@@ -25,7 +28,8 @@ const locations = [
         image: '/images/chala_office.png',
         address: 'Av. Arequipa 210, Chala',
         phone: '+51 986 635 086',
-        email: 'informeschala@minares.com.pe'
+        email: 'informeschala@minares.com.pe',
+        whatsapp: '51986635086'
     },
     {
         id: 4,
@@ -33,7 +37,8 @@ const locations = [
         image: '/images/relave_office.png',
         address: 'Calle Plomo Lt. 16 Mz. S-1 Barrio Los Angeles',
         phone: '+51 980 839 840',
-        email: 'informesrelave@gmail.com'
+        email: 'informesrelave@gmail.com',
+        whatsapp: '51980839840'
     },
     {
         id: 5,
@@ -41,15 +46,17 @@ const locations = [
         image: '/images/arequipa_office.png',
         address: 'Parque Industrial de Río Seco, 1ra Etapa, Mz. C-Lt. 2-Cerro Colorado',
         phone: '+51 957 246 955',
-        email: 'informesarequipa2023@gmail.com'
+        email: 'informesarequipa2023@gmail.com',
+        whatsapp: '51957246955'
     },
     {
         id: 6,
         name: 'Abancay',
         image: '/images/abancay_office.png',
-        address: 'Av. Las Malvinas N° 135 - Abancay',
+        address: 'Av. Panamericana 245 - Abancay',
         phone: '+51 914 966 623',
-        email: 'informesabancay@minares.com.pe'
+        email: 'informesabancay@minares.com.pe',
+        whatsapp: '51914966623'
     },
 ];
 
@@ -146,6 +153,20 @@ const LocationsSection = () => {
                                             <div className="flex items-center text-gray-300 text-sm group/item hover:text-white transition-colors break-all">
                                                 <FontAwesomeIcon icon={faEnvelope} className="h-4 w-4 mr-3 text-brand-primary shrink-0" />
                                                 <span>{location.email}</span>
+                                            </div>
+                                        )}
+
+                                        {location.whatsapp && (
+                                            <div className="pt-4">
+                                                <a
+                                                    href={`https://wa.me/${location.whatsapp}?text=${encodeURIComponent(`Hola, deseo realizar una consulta sobre los servicios de Laboratorios Minares`)}`}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="flex items-center justify-center space-x-2 bg-green-600 hover:bg-green-500 text-white font-bold py-2.5 px-4 rounded-xl transition-all duration-300 shadow-lg hover:shadow-green-900/20 active:scale-95 text-sm"
+                                                >
+                                                    <FontAwesomeIcon icon={faWhatsapp} className="h-4 w-4" />
+                                                    <span>Consultar a WhatsApp</span>
+                                                </a>
                                             </div>
                                         )}
                                     </div>

@@ -5,4 +5,6 @@
   --color-brand-secondary: #A52A2A;
   --color-brand-accent: #FF0000;
   --color-brand-surface: #2A0a0a;
+
+  --breakpoint-xs: 400px;
 }

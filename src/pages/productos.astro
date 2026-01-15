@@ -1,0 +1,33 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ProductCategories from "../components/ProductCategories";
+---
+
+<Layout title="Insumos y Equipos | LabMinares">
+    <div class="bg-white min-h-screen">
+        {/* Hero Header (Matched to Services/About pages) */}
+        <div class="relative bg-brand-surface py-24">
+            <div class="absolute inset-0 overflow-hidden">
+                <div class="absolute inset-0 bg-brand-surface opacity-90"></div>
+            </div>
+            <div
+                class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center"
+            >
+                <h1
+                    class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl lg:text-6xl mb-4"
+                >
+                    Insumos y Equipos
+                </h1>
+                <p class="max-w-2xl mx-auto text-xl text-gray-300">
+                    Suministros de alta calidad para laboratorios metalúrgicos y
+                    ensayos al fuego.
+                </p>
+            </div>
+        </div>
+
+        {/* Content Section */}
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <ProductCategories client:visible />
+        </div>
+    </div>
+</Layout>

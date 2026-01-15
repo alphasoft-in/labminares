@@ -39,7 +39,7 @@ const Footer = () => {
                     <div>
                         <h3 className="text-white text-lg font-semibold mb-4">Enlaces Rápidos</h3>
                         <ul className="space-y-2">
-                            {['Inicio', 'Nosotros', 'Servicios', 'Contacto'].map((item) => (
+                            {['Inicio', 'Nosotros', 'Servicios', 'Productos', 'Contacto'].map((item) => (
                                 <li key={item}>
                                     <a href="#" className="text-sm hover:text-brand-accent transition-colors flex items-center group">
                                         <FontAwesomeIcon icon={faChevronRight} className="h-3 w-3 mr-2 text-brand-primary group-hover:text-brand-accent transition-colors" />
@@ -56,7 +56,7 @@ const Footer = () => {
                         <ul className="space-y-4">
                             <li className="flex items-start">
                                 <FontAwesomeIcon icon={faMapMarkerAlt} className="h-5 w-5 mr-3 text-brand-primary mt-0.5" />
-                                <span className="text-sm text-gray-400">Av. Simón Bolivar N° 147 Pueblo Libre - Lima</span>
+                                <span className="text-sm text-gray-400">Av Marcos Farfan 3377 - Independencia - Lima</span>
                             </li>
                             <li className="flex items-center">
                                 <FontAwesomeIcon icon={faPhone} className="h-4 w-4 mr-3 text-brand-primary" />
@@ -77,7 +77,7 @@ const Footer = () => {
                         </p>
                         <div className="bg-brand-primary/10 p-4 rounded-lg border border-brand-primary/20">
                             <p className="text-brand-accent font-semibold text-sm mb-1">Lunes - Viernes:</p>
-                            <p className="text-gray-400 text-sm mb-3">8:00 AM - 6:00 PM</p>
+                            <p className="text-gray-400 text-sm mb-3">7:00 AM - 7:00 PM</p>
                             <p className="text-brand-accent font-semibold text-sm mb-1">Sábados:</p>
                             <p className="text-gray-400 text-sm">9:00 AM - 1:00 PM</p>
                         </div>

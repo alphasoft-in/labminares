@@ -50,7 +50,7 @@ const ServicesSlider = () => {
     };
 
     return (
-        <div className="relative w-full h-[600px] overflow-hidden bg-gray-900 group">
+        <div className="relative w-full min-h-[500px] h-[calc(100vh-140px)] md:h-[calc(100vh-105px)] overflow-hidden bg-gray-900 group">
             {/* Slides */}
             {services.map((service, index) => (
                 <div
