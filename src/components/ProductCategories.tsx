@@ -93,7 +93,7 @@ const ProductCategories = () => {
                         Contamos con un amplio stock y capacidad de importación para reactivos y equipos especializados.
                         Contáctenos para una cotización personalizada.
                     </p>
-                    <a href="/contactenos" className="inline-block bg-brand-accent hover:bg-red-600 text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105 shadow-lg">
+                    <a href="/contactenos" className="inline-block bg-brand-primary hover:bg-brand-secondary text-white font-bold py-3 px-8 rounded-full transition-transform transform hover:scale-105 shadow-lg">
                         Solicitar Cotización
                     </a>
                 </div>

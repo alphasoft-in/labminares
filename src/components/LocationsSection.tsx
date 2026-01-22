@@ -11,7 +11,8 @@ const locations = [
         address: 'Calle Marcos Farfan 3377, Independencia - Lima',
         phone: '+51 967 605 686',
         email: 'informeslima@minares.com.pe',
-        whatsapp: '51967605686'
+        whatsapp: '51967605686',
+        mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Calle+Marcos+Farfan+3377+Independencia+Lima'
     },
     {
         id: 2,
@@ -20,7 +21,8 @@ const locations = [
         address: 'Av. Panamericana - Sur Urb. Vista Alegre Mz. K - Lt. 11A',
         phone: '+51 986 635 088',
         email: 'informesnasca@minares.com.pe',
-        whatsapp: '51986635088'
+        whatsapp: '51986635088',
+        mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Av+Panamericana+Sur+Urb+Vista+Alegre+Mz+K+Lt+11A+Nazca'
     },
     {
         id: 3,
@@ -29,7 +31,8 @@ const locations = [
         address: 'Av. Arequipa 210, Chala',
         phone: '+51 986 635 086',
         email: 'informeschala@minares.com.pe',
-        whatsapp: '51986635086'
+        whatsapp: '51986635086',
+        mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Av+Arequipa+210+Chala'
     },
     {
         id: 4,
@@ -38,7 +41,8 @@ const locations = [
         address: 'Calle Plomo Lt. 16 Mz. S-1 Barrio Los Angeles',
         phone: '+51 980 839 840',
         email: 'informesrelave@gmail.com',
-        whatsapp: '51980839840'
+        whatsapp: '51980839840',
+        mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Calle+Plomo+Lt+16+Mz+S1+Barrio+Los+Angeles+Relave'
     },
     {
         id: 5,
@@ -47,7 +51,8 @@ const locations = [
         address: 'Parque Industrial de Río Seco, 1ra Etapa, Mz. C-Lt. 2-Cerro Colorado',
         phone: '+51 957 246 955',
         email: 'informesarequipa2023@gmail.com',
-        whatsapp: '51957246955'
+        whatsapp: '51957246955',
+        mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Parque+Industrial+de+Río+Seco+1ra+Etapa+Mz+CLt+2Cerro+Colorado+Arequipa'
     },
     {
         id: 6,
@@ -56,7 +61,8 @@ const locations = [
         address: 'Av. Panamericana 245 - Abancay',
         phone: '+51 914 966 623',
         email: 'informesabancay@minares.com.pe',
-        whatsapp: '51914966623'
+        whatsapp: '51914966623',
+        mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Av+Panamericana+245+Abancay'
     },
 ];
 
@@ -138,10 +144,15 @@ const LocationsSection = () => {
                                         <div className="w-12 h-0.5 bg-brand-accent/50 mb-2"></div>
 
                                         {location.address && (
-                                            <div className="flex items-start text-gray-300 text-sm group/item hover:text-white transition-colors">
-                                                <FontAwesomeIcon icon={faMapMarkerAlt} className="h-4 w-4 mr-3 mt-0.5 text-brand-primary shrink-0" />
+                                            <a
+                                                href={location.mapsUrl}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="flex items-start text-gray-300 text-sm group/item hover:text-white transition-colors cursor-pointer"
+                                            >
+                                                <FontAwesomeIcon icon={faMapMarkerAlt} className="h-4 w-4 mr-3 mt-0.5 text-brand-primary shrink-0 group-hover/item:text-white transition-colors" />
                                                 <span className="leading-snug">{location.address}</span>
-                                            </div>
+                                            </a>
                                         )}
                                         {location.phone && (
                                             <div className="flex items-center text-gray-300 text-sm group/item hover:text-white transition-colors">

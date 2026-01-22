@@ -19,18 +19,18 @@ const Footer = () => {
                             Líderes en servicios de análisis de laboratorio para la minería,
                             brindando precisión, confianza y tecnología de punta en cada resultado.
                         </p>
-                        <div className="flex space-x-4">
-                            <a href="#" className="text-gray-400 hover:text-brand-accent transition-colors">
-                                <FontAwesomeIcon icon={faFacebook} className="h-5 w-5" />
+                        <div className="flex space-x-5">
+                            <a href="https://www.facebook.com/people/Minares-South-SRL-Laboratorio-Qu%C3%ADmico-Metal%C3%BArgico/61572169857346/?mibextid=ZbWKwL" className="text-gray-400 hover:text-brand-primary transition-all hover:scale-110 active:scale-95 flex items-center justify-center" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                                <FontAwesomeIcon icon={faFacebook} size="xl" />
                             </a>
-                            <a href="#" className="text-gray-400 hover:text-brand-accent transition-colors">
-                                <FontAwesomeIcon icon={faLinkedin} className="h-5 w-5" />
+                            <a href="https://www.linkedin.com/company/minares-south-s-r-l/" className="text-gray-400 hover:text-brand-primary transition-all hover:scale-110 active:scale-95 flex items-center justify-center" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                                <FontAwesomeIcon icon={faLinkedin} size="xl" />
                             </a>
-                            <a href="#" className="text-gray-400 hover:text-brand-accent transition-colors">
-                                <FontAwesomeIcon icon={faInstagram} className="h-5 w-5" />
+                            <a href="#" className="text-gray-400 hover:text-brand-primary transition-all hover:scale-110 active:scale-95 flex items-center justify-center" aria-label="Instagram">
+                                <FontAwesomeIcon icon={faInstagram} size="xl" />
                             </a>
-                            <a href="#" className="text-gray-400 hover:text-brand-accent transition-colors">
-                                <FontAwesomeIcon icon={faTiktok} className="h-5 w-5" />
+                            <a href="https://www.tiktok.com/@minaressouth?_t=ZM-8tjJrVAFVQs&_r=1" className="text-gray-400 hover:text-brand-primary transition-all hover:scale-110 active:scale-95 flex items-center justify-center" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
+                                <FontAwesomeIcon icon={faTiktok} size="xl" />
                             </a>
                         </div>
                     </div>
@@ -64,7 +64,7 @@ const Footer = () => {
                             </li>
                             <li className="flex items-center">
                                 <FontAwesomeIcon icon={faEnvelope} className="h-4 w-4 mr-3 text-brand-primary" />
-                                <span className="text-sm text-gray-400">info@labminares.com</span>
+                                <span className="text-sm text-gray-400">info@minares.com.pe</span>
                             </li>
                         </ul>
                     </div>
@@ -93,8 +93,8 @@ const Footer = () => {
                         &copy; {currentYear} LABMINARES. Todos los derechos reservados.
                     </p>
                     <div className="flex space-x-6 mt-4 md:mt-0">
-                        <a href="#" className="text-sm text-gray-500 hover:text-white transition-colors">Privacidad</a>
-                        <a href="#" className="text-sm text-gray-500 hover:text-white transition-colors">Términos</a>
+                        <a href="/politica-de-privacidad" className="text-sm text-gray-500 hover:text-white transition-colors">Privacidad</a>
+                        <a href="/terminos-y-condiciones" className="text-sm text-gray-500 hover:text-white transition-colors">Términos</a>
                     </div>
                 </div>
             </div>

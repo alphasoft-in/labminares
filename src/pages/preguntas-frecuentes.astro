@@ -1,0 +1,67 @@
+---
+import Layout from "../layouts/Layout.astro";
+import FAQComponent from "../components/FAQ";
+---
+
+<Layout title="Preguntas Frecuentes | Laboratorios Minares">
+    <main>
+        {/* Hero Section */}
+        <section
+            class="relative py-20 bg-brand-surface text-white overflow-hidden"
+        >
+            <div
+                class="absolute inset-0 opacity-10 bg-[url('/images/pattern.png')] bg-repeat"
+            >
+            </div>
+            <div
+                class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center"
+            >
+                <h1
+                    class="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight"
+                >
+                    Preguntas <span class="text-brand-accent">Frecuentes</span>
+                </h1>
+                <p class="text-xl text-gray-300 max-w-2xl mx-auto">
+                    Encuentra respuestas rápidas a tus dudas sobre nuestros
+                    procesos analíticos, logística y entrega de resultados.
+                </p>
+            </div>
+        </section>
+
+        {/* Content Section */}
+        <section class="bg-gray-50 py-12">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <FAQComponent client:load />
+
+                {/* Contact CTA */}
+                <div
+                    class="mt-16 text-center bg-white p-10 rounded-3xl shadow-sm border border-gray-100"
+                >
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">
+                        ¿No encontraste lo que buscabas?
+                    </h3>
+                    <p class="text-gray-600 mb-8 max-w-xl mx-auto">
+                        Nuestro equipo de soporte técnico está disponible para
+                        brindarte asesoría personalizada según tus necesidades
+                        específicas.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center gap-4">
+                        <a
+                            href="/contactenos"
+                            class="bg-brand-primary hover:bg-brand-secondary text-white font-bold py-3 px-8 rounded-xl transition-all shadow-lg hover:shadow-brand-primary/20"
+                        >
+                            Ir a Contacto
+                        </a>
+                        <a
+                            href="https://wa.me/51967605686"
+                            target="_blank"
+                            class="bg-green-600 hover:bg-green-500 text-white font-bold py-3 px-8 rounded-xl transition-all shadow-lg hover:shadow-green-900/20 flex items-center justify-center space-x-2"
+                        >
+                            <span>Escríbenos por WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</Layout>

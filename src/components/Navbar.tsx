@@ -20,8 +20,8 @@ const Navbar = ({ pathname = '/' }: NavbarProps) => {
             : "px-3 py-2 rounded-md text-sm font-medium transition-colors";
 
         const activeClass = isActive(path)
-            ? "text-white bg-gradient-to-b from-transparent to-black/20 border-b-2 border-brand-accent font-bold"
-            : "text-white/80 hover:text-white hover:bg-white/5 border-b-2 border-transparent transition-all";
+            ? "text-white font-bold relative after:absolute after:bottom-0 after:left-0 after:w-full after:h-[1px] after:bg-white"
+            : "text-white/60 hover:text-white transition-all";
 
         return `${baseClass} ${activeClass}`;
     };
@@ -29,23 +29,21 @@ const Navbar = ({ pathname = '/' }: NavbarProps) => {
     return (
         <nav className="bg-brand-primary text-white shadow-lg sticky top-0 z-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex items-center justify-between h-16">
+                <div className="flex items-center justify-between h-20">
 
                     <div className="flex-shrink-0 flex items-center">
-                        <a href="/" className="font-bold text-xl tracking-tight">LabMinares</a>
+                        <a href="/" className="font-bold text-xl tracking-tight">Minares South</a>
                     </div>
-                    <div className="hidden md:block flex-1">
-                        <div className="flex justify-center items-baseline space-x-4">
+                    <div className="hidden md:block">
+                        <div className="flex justify-end items-baseline space-x-4">
                             <a href="/" className={getLinkClass('/')}>Inicio</a>
                             <a href="/nosotros" className={getLinkClass('/nosotros')}>Nosotros</a>
                             <a href="/servicios" className={getLinkClass('/servicios')}>Servicios</a>
                             <a href="/productos" className={getLinkClass('/productos')}>Productos</a>
                             <a href="/trabaja-con-nosotros" className={getLinkClass('/trabaja-con-nosotros')}>Trabaja con nosotros</a>
+                            <a href="/preguntas-frecuentes" className={getLinkClass('/preguntas-frecuentes')}>FAQS</a>
                             <a href="/contactenos" className={getLinkClass('/contactenos')}>Contacto</a>
                         </div>
-                    </div>
-                    <div className="hidden md:block w-[100px]">
-                        {/* Spacer to balance logo width for perfect centering if needed, or actions area */}
                     </div>
                     <div className="-mr-2 flex md:hidden">
                         <button
@@ -78,6 +76,7 @@ const Navbar = ({ pathname = '/' }: NavbarProps) => {
                         <a href="/servicios" className={getLinkClass('/servicios', true)}>Servicios</a>
                         <a href="/productos" className={getLinkClass('/productos', true)}>Productos</a>
                         <a href="/trabaja-con-nosotros" className={getLinkClass('/trabaja-con-nosotros', true)}>Trabaja con nosotros</a>
+                        <a href="/preguntas-frecuentes" className={getLinkClass('/preguntas-frecuentes', true)}>FAQS</a>
                         <a href="/contactenos" className={getLinkClass('/contactenos', true)}>Contacto</a>
                     </div>
                 </div>

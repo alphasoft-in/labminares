@@ -2,6 +2,7 @@
 import Navbar from "../components/Navbar";
 import TopHeader from "../components/TopHeader";
 import Footer from "../components/Footer";
+import WhatsAppButton from "../components/WhatsAppButton";
 import "../styles/global.css";
 
 interface Props {
@@ -25,6 +26,7 @@ const { title } = Astro.props;
         <TopHeader client:load />
         <Navbar client:load pathname={Astro.url.pathname} />
         <slot />
+        <WhatsAppButton client:load />
         <Footer client:visible />
     </body>
 </html>
