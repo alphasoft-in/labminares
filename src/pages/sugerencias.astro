@@ -1,0 +1,163 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Buzón de Sugerencias | MINARES SOUTH">
+    <!-- Hero Header -->
+    <div class="relative bg-brand-surface py-20 overflow-hidden">
+        {/* Background Image with Overlay */}
+        <div class="absolute inset-0 z-0 text-white">
+            <img
+                src="/images/via_seca.png"
+                alt="Sugerencias"
+                class="w-full h-full object-cover opacity-50 mix-blend-luminosity transform scale-105"
+            />
+            <div
+                class="absolute inset-0 bg-gradient-to-r from-brand-surface via-brand-surface/80 to-transparent"
+            >
+            </div>
+            <div class="absolute inset-0 bg-brand-surface/40"></div>
+        </div>
+
+        <div
+            class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10"
+        >
+            <div
+                class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-white/10 border border-white/20 mb-6 backdrop-blur-sm"
+            >
+                <div
+                    class="w-1.5 h-1.5 rounded-full bg-brand-primary animate-pulse"
+                >
+                </div>
+                <span
+                    class="text-white font-bold uppercase tracking-[0.2em] text-[10px]"
+                    >Mejora Continua</span
+                >
+            </div>
+            <h1
+                class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl uppercase"
+            >
+                Buzón de Sugerencias
+            </h1>
+            <p
+                class="mt-4 max-w-2xl mx-auto text-lg text-gray-300 font-medium leading-relaxed"
+            >
+                Su opinión es fundamental para nosotros. Ayúdenos a mejorar
+                nuestros servicios.
+            </p>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="py-12 bg-white">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div
+                class="bg-gray-50 p-8 rounded-2xl shadow-lg border-t-4 border-brand-primary"
+            >
+                <div class="mb-8">
+                    <h2 class="text-2xl font-bold text-gray-900">
+                        Envíenos sus sugerencias o comentarios
+                    </h2>
+                    <p class="mt-2 text-gray-600">
+                        Valoramos cada una de sus palabras y las tomamos en
+                        cuenta para nuestro proceso de mejora continua.
+                    </p>
+                </div>
+
+                <form action="#" method="POST" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label
+                                for="name"
+                                class="block text-sm font-medium text-gray-700"
+                                >Nombre Completo</label
+                            >
+                            <input
+                                type="text"
+                                name="name"
+                                id="name"
+                                required
+                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-brand-primary focus:ring-brand-primary sm:text-sm px-4 py-3 bg-white"
+                                placeholder="Su nombre"
+                            />
+                        </div>
+                        <div>
+                            <label
+                                for="email"
+                                class="block text-sm font-medium text-gray-700"
+                                >Correo Electrónico</label
+                            >
+                            <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                required
+                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-brand-primary focus:ring-brand-primary sm:text-sm px-4 py-3 bg-white"
+                                placeholder="correo@ejemplo.com"
+                            />
+                        </div>
+                    </div>
+
+                    <div>
+                        <label
+                            for="type"
+                            class="block text-sm font-medium text-gray-700"
+                            >Tipo de Comentario</label
+                        >
+                        <select
+                            id="type"
+                            name="type"
+                            class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-brand-primary focus:ring-brand-primary sm:text-sm px-4 py-3 bg-white"
+                        >
+                            <option>Sugerencia</option>
+                            <option>Felicitación</option>
+                            <option>Reclamación</option>
+                            <option>Otro</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label
+                            for="message"
+                            class="block text-sm font-medium text-gray-700"
+                            >Su Mensaje</label
+                        >
+                        <div class="mt-1">
+                            <textarea
+                                id="message"
+                                name="message"
+                                rows="6"
+                                required
+                                class="block w-full rounded-md border-gray-300 shadow-sm focus:border-brand-primary focus:ring-brand-primary sm:text-sm px-4 py-3 bg-white"
+                                placeholder="Escriba aquí sus sugerencias o comentarios..."
+                            ></textarea>
+                        </div>
+                    </div>
+
+                    <div>
+                        <button
+                            type="submit"
+                            class="group/btn relative overflow-hidden w-full inline-flex justify-center py-4 px-6 border border-transparent shadow-[0_10px_30px_rgba(254,0,2,0.2)] hover:shadow-[0_20px_40px_rgba(254,0,2,0.3)] text-sm font-black rounded-xl text-white bg-brand-primary transition-all duration-300 transform hover:-translate-y-1 active:scale-95 uppercase tracking-widest"
+                        >
+                            <span class="relative z-10">Enviar Sugerencia</span>
+                            <div
+                                class="absolute inset-0 bg-white/20 translate-y-full group-hover/btn:translate-y-0 transition-transform duration-300"
+                            >
+                            </div>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="mt-12 text-center text-gray-500 text-sm">
+                <p>
+                    También puede enviarnos un correo directamente a <a
+                        href="mailto:info@minares.com.pe"
+                        class="text-brand-primary hover:underline"
+                        >info@minares.com.pe</a
+                    >
+                </p>
+            </div>
+        </div>
+    </main>
+</Layout>

@@ -36,7 +36,7 @@ const services = [
 
 const ServicesGrid = () => {
     return (
-        <div className="mt-12 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-12 grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 2xl:grid-cols-4 xl:max-w-5xl 2xl:max-w-7xl mx-auto">
             {services.map((service) => (
                 <div key={service.id} className="flex flex-col bg-white rounded-2xl shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(0,0,0,0.1)] border border-gray-100/50 transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] group">
                     <div className="h-64 w-full relative overflow-hidden bg-brand-surface rounded-t-2xl">

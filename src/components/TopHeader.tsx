@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faLinkedin, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faLinkedin, faInstagram, faTiktok, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 const TopHeader = () => {
     return (
@@ -29,6 +29,9 @@ const TopHeader = () => {
                     </a>
                     <a href="https://www.tiktok.com/@minaressouth?_t=ZM-8tjJrVAFVQs&_r=1" className="opacity-70 hover:opacity-100 transition-all hover:scale-110 active:scale-95" aria-label="TikTok" target='_blank'>
                         <FontAwesomeIcon icon={faTiktok} className="h-6 w-6" />
+                    </a>
+                    <a href="https://www.youtube.com/@MinaresSouth" className="opacity-70 hover:opacity-100 transition-all hover:scale-110 active:scale-95" aria-label="YouTube" target='_blank'>
+                        <FontAwesomeIcon icon={faYoutube} className="h-6 w-6" />
                     </a>
                 </div>
             </div>

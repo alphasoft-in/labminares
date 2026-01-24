@@ -16,7 +16,7 @@ const Navbar = ({ pathname = '/' }: NavbarProps) => {
 
     const getLinkClass = (path: string, mobile = false) => {
         const baseClass = mobile
-            ? "block px-3 py-2 rounded-md text-base font-medium transition-colors"
+            ? "block px-4 py-2.5 rounded-lg text-sm font-medium transition-all"
             : "px-3 py-2 rounded-md text-sm font-medium transition-colors";
 
         const activeClass = isActive(path)
@@ -34,18 +34,19 @@ const Navbar = ({ pathname = '/' }: NavbarProps) => {
                     <div className="flex-shrink-0 flex items-center">
                         <a href="/" className="font-bold text-xl tracking-tight">Minares South</a>
                     </div>
-                    <div className="hidden md:block">
-                        <div className="flex justify-end items-baseline space-x-4">
+                    <div className="hidden lg:block">
+                        <div className="flex justify-end items-baseline space-x-2 xl:space-x-4">
                             <a href="/" className={getLinkClass('/')}>Inicio</a>
                             <a href="/nosotros" className={getLinkClass('/nosotros')}>Nosotros</a>
                             <a href="/servicios" className={getLinkClass('/servicios')}>Servicios</a>
                             <a href="/productos" className={getLinkClass('/productos')}>Productos</a>
+                            <a href="/novedades" className={getLinkClass('/novedades')}>Novedades</a>
                             <a href="/trabaja-con-nosotros" className={getLinkClass('/trabaja-con-nosotros')}>Trabaja con nosotros</a>
                             <a href="/preguntas-frecuentes" className={getLinkClass('/preguntas-frecuentes')}>FAQS</a>
                             <a href="/contactenos" className={getLinkClass('/contactenos')}>Contacto</a>
                         </div>
                     </div>
-                    <div className="-mr-2 flex md:hidden">
+                    <div className="-mr-2 flex lg:hidden">
                         <button
                             onClick={() => setIsOpen(!isOpen)}
                             type="button"
@@ -69,12 +70,13 @@ const Navbar = ({ pathname = '/' }: NavbarProps) => {
             </div>
 
             {isOpen && (
-                <div className="md:hidden" id="mobile-menu">
-                    <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
+                <div className="lg:hidden" id="mobile-menu">
+                    <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center bg-brand-surface/95 backdrop-blur-sm border-t border-white/10 animate-fade-in-down">
                         <a href="/" className={getLinkClass('/', true)}>Inicio</a>
                         <a href="/nosotros" className={getLinkClass('/nosotros', true)}>Nosotros</a>
                         <a href="/servicios" className={getLinkClass('/servicios', true)}>Servicios</a>
                         <a href="/productos" className={getLinkClass('/productos', true)}>Productos</a>
+                        <a href="/novedades" className={getLinkClass('/novedades', true)}>Novedades</a>
                         <a href="/trabaja-con-nosotros" className={getLinkClass('/trabaja-con-nosotros', true)}>Trabaja con nosotros</a>
                         <a href="/preguntas-frecuentes" className={getLinkClass('/preguntas-frecuentes', true)}>FAQS</a>
                         <a href="/contactenos" className={getLinkClass('/contactenos', true)}>Contacto</a>

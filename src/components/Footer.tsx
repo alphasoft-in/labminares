@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope, faMapMarkerAlt, faChevronRight } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook, faLinkedin, faInstagram, faTiktok } from '@fortawesome/free-brands-svg-icons';
+import { faFacebook, faLinkedin, faInstagram, faTiktok, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -14,7 +14,7 @@ const Footer = () => {
 
                     {/* Column 1: Company Info */}
                     <div>
-                        <h3 className="text-white text-xl font-bold mb-4">LABMINARES</h3>
+                        <h3 className="text-white text-xl font-bold mb-4">MINARES SOUTH</h3>
                         <p className="text-sm leading-relaxed mb-6 text-gray-400">
                             Líderes en servicios de análisis de laboratorio para la minería,
                             brindando precisión, confianza y tecnología de punta en cada resultado.
@@ -32,6 +32,9 @@ const Footer = () => {
                             <a href="https://www.tiktok.com/@minaressouth?_t=ZM-8tjJrVAFVQs&_r=1" className="text-gray-400 hover:text-brand-primary transition-all hover:scale-110 active:scale-95 flex items-center justify-center" aria-label="TikTok" target="_blank" rel="noopener noreferrer">
                                 <FontAwesomeIcon icon={faTiktok} size="xl" />
                             </a>
+                            <a href="https://www.youtube.com/@MinaresSouth" className="text-gray-400 hover:text-brand-primary transition-all hover:scale-110 active:scale-95 flex items-center justify-center" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                                <FontAwesomeIcon icon={faYoutube} size="xl" />
+                            </a>
                         </div>
                     </div>
 
@@ -39,11 +42,19 @@ const Footer = () => {
                     <div>
                         <h3 className="text-white text-lg font-semibold mb-4">Enlaces Rápidos</h3>
                         <ul className="space-y-2">
-                            {['Inicio', 'Nosotros', 'Servicios', 'Productos', 'Contacto'].map((item) => (
-                                <li key={item}>
-                                    <a href="#" className="text-sm hover:text-brand-accent transition-colors flex items-center group">
+                            {[
+                                { name: 'Inicio', href: '/' },
+                                { name: 'Nosotros', href: '/nosotros' },
+                                { name: 'Servicios', href: '/servicios' },
+                                { name: 'Productos', href: '/productos' },
+                                { name: 'Novedades', href: '/novedades' },
+                                { name: 'Sugerencias', href: '/sugerencias' },
+                                { name: 'Contacto', href: '/contactenos' }
+                            ].map((link) => (
+                                <li key={link.name}>
+                                    <a href={link.href} className="text-sm hover:text-brand-accent transition-colors flex items-center group">
                                         <FontAwesomeIcon icon={faChevronRight} className="h-3 w-3 mr-2 text-brand-primary group-hover:text-brand-accent transition-colors" />
-                                        {item}
+                                        {link.name}
                                     </a>
                                 </li>
                             ))}
@@ -90,7 +101,7 @@ const Footer = () => {
             <div className="border-t border-gray-800 bg-black/20">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex flex-col md:flex-row justify-between items-center">
                     <p className="text-sm text-gray-500 text-center md:text-left">
-                        &copy; {currentYear} LABMINARES. Todos los derechos reservados.
+                        &copy; {currentYear} MINARES SOUTH. Todos los derechos reservados.
                     </p>
                     <div className="flex space-x-6 mt-4 md:mt-0">
                         <a href="/politica-de-privacidad" className="text-sm text-gray-500 hover:text-white transition-colors">Privacidad</a>

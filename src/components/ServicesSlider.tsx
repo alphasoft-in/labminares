@@ -50,7 +50,7 @@ const ServicesSlider = () => {
     };
 
     return (
-        <div className="relative w-full min-h-[500px] h-[calc(100vh-140px)] md:h-[calc(100vh-105px)] overflow-hidden bg-gray-900 group">
+        <div className="relative w-full min-h-[450px] h-[calc(100vh-160px)] md:h-[calc(100vh-105px)] overflow-hidden bg-gray-900 group">
             {/* Slides */}
             {services.map((service, index) => (
                 <div
@@ -75,7 +75,6 @@ const ServicesSlider = () => {
                         />
 
                         {/* Texture Overlay */}
-                        <div className="absolute inset-0 opacity-[0.03] bg-[url('/images/pattern.png')] bg-repeat"></div>
 
                         {/* Sophisticated Gradient Mask */}
                         <div className="absolute inset-0 bg-gradient-to-r from-brand-surface via-brand-surface/80 to-transparent"></div>
@@ -92,7 +91,7 @@ const ServicesSlider = () => {
                                             <div className="h-[2px] w-12 bg-brand-primary animate-pulse"></div>
                                             <span className="text-white font-bold uppercase tracking-[0.3em] text-[10px] opacity-80">Excelencia en Laboratorio</span>
                                         </div>
-                                        <h2 className="text-5xl md:text-7xl font-black text-white mb-6 tracking-tighter leading-[0.85] drop-shadow-2xl uppercase">
+                                        <h2 className="text-3xl sm:text-5xl md:text-7xl font-black text-white mb-4 sm:mb-6 tracking-tighter leading-[0.9] sm:leading-[0.85] drop-shadow-2xl uppercase">
                                             {service.id === 1 ? (
                                                 <>
                                                     <span className="block text-xl md:text-2xl font-bold opacity-70 tracking-normal mb-1">Área de</span>
@@ -106,19 +105,19 @@ const ServicesSlider = () => {
                                             ) : (
                                                 <>
                                                     <span className="block text-xl md:text-2xl font-bold opacity-70 tracking-normal mb-1">Área de Via Húmeda</span>
-                                                    <span className="block text-4xl md:text-6xl">(Volumetría)</span>
+                                                    <span className="block text-2xl sm:text-4xl md:text-6xl">(Volumetría)</span>
                                                 </>
                                             )}
                                         </h2>
-                                        <p className="text-base md:text-lg text-gray-200 mb-10 font-medium max-w-xl leading-relaxed drop-shadow-lg opacity-90 border-l-2 border-brand-primary pl-6">
+                                        <p className="text-sm sm:text-base md:text-lg text-gray-200 mb-6 sm:mb-10 font-medium max-w-xl leading-relaxed drop-shadow-lg opacity-90 border-l-2 border-brand-primary pl-4 sm:pl-6">
                                             {service.description}
                                         </p>
-                                        <div className="flex flex-wrap gap-4">
-                                            <a href="/servicios" className="group/btn relative overflow-hidden bg-brand-primary text-white font-black py-4 px-10 rounded-xl transition-all shadow-2xl shadow-brand-primary/20 hover:shadow-brand-primary/40 hover:-translate-y-1 active:scale-95">
+                                        <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                                            <a href="/servicios" className="group/btn relative overflow-hidden bg-brand-primary text-white font-black py-3 px-6 sm:py-4 sm:px-10 rounded-xl transition-all shadow-2xl shadow-brand-primary/20 hover:shadow-brand-primary/40 hover:-translate-y-1 active:scale-95 text-center text-sm sm:text-base">
                                                 <span className="relative z-10">DESCUBRIR SERVICIOS</span>
                                                 <div className="absolute inset-0 bg-white/20 translate-y-full group-hover/btn:translate-y-0 transition-transform duration-300"></div>
                                             </a>
-                                            <a href="/contactenos" className="bg-white/5 hover:bg-white/10 backdrop-blur-md text-white border border-white/20 font-black py-4 px-10 rounded-xl transition-all hover:-translate-y-1 active:scale-95">
+                                            <a href="/contactenos" className="bg-white/5 hover:bg-white/10 backdrop-blur-md text-white border border-white/20 font-black py-3 px-6 sm:py-4 sm:px-10 rounded-xl transition-all hover:-translate-y-1 active:scale-95 text-center text-sm sm:text-base">
                                                 CONTÁCTANOS
                                             </a>
                                         </div>

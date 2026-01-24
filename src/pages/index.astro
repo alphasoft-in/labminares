@@ -3,7 +3,11 @@ import Layout from "../layouts/Layout.astro";
 import ServicesSlider from "../components/ServicesSlider";
 import ServicesGrid from "../components/ServicesGrid";
 import LocationsSection from "../components/LocationsSection";
+import Testimonials from "../components/Testimonials";
+import Clients from "../components/Clients";
+import Partners from "../components/Partners";
 ---
+
 <Layout title="LabMinares - Inicio">
 	<main>
 		<ServicesSlider client:load />
@@ -26,5 +30,8 @@ import LocationsSection from "../components/LocationsSection";
 		</section>
 
 		<LocationsSection client:visible />
+		<Testimonials client:visible />
+		<Clients client:visible />
+		<Partners client:visible />
 	</main>
 </Layout>

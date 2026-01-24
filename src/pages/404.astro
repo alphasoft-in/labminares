@@ -1,0 +1,59 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="404 - Página No Encontrada | Laboratorios Minares">
+    <main
+        class="min-h-[70vh] flex flex-col items-center justify-center bg-white px-4 py-20"
+    >
+        <div class="max-w-xl w-full text-center">
+            {/* Simple, Bold Visual */}
+            <div class="mb-8">
+                <span
+                    class="text-brand-primary text-8xl md:text-9xl font-black tracking-tighter leading-none opacity-20"
+                    >404</span
+                >
+            </div>
+
+            <div class="space-y-6">
+                <div>
+                    <h1
+                        class="text-3xl md:text-5xl font-black text-gray-900 uppercase tracking-tighter leading-tight"
+                    >
+                        Página no <span class="text-brand-primary"
+                            >encontrada</span
+                        >
+                    </h1>
+                    <div
+                        class="w-12 h-1 bg-brand-primary mx-auto mt-4 rounded-full"
+                    >
+                    </div>
+                </div>
+
+                <p
+                    class="text-gray-500 font-medium text-lg leading-relaxed px-4"
+                >
+                    Lo sentimos, la dirección a la que intenta acceder no existe
+                    o fue movida definitivamente.
+                </p>
+
+                <div
+                    class="pt-8 flex flex-col sm:flex-row items-center justify-center gap-4"
+                >
+                    <a
+                        href="/"
+                        class="w-full sm:w-auto px-10 py-4 bg-brand-primary text-white font-black rounded-xl transition-all shadow-xl shadow-brand-primary/20 hover:shadow-brand-primary/40 hover:-translate-y-1 active:scale-95 text-sm tracking-widest uppercase"
+                    >
+                        Volver al Inicio
+                    </a>
+                    <a
+                        href="/servicios"
+                        class="w-full sm:w-auto px-10 py-4 bg-white text-gray-900 border border-gray-200 font-black rounded-xl transition-all hover:bg-gray-50 hover:-translate-y-1 active:scale-95 text-sm tracking-widest uppercase"
+                    >
+                        Nuestras Áreas
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+</Layout>
