@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
 @theme {
-  --color-brand-primary: #fe0002;
-  --color-brand-secondary: #d40002;
-  --color-brand-accent: #ff3335;
-  --color-brand-surface: #1a0000;
+  --color-brand-primary: #91150D;
+  --color-brand-secondary: #000000;
+  --color-brand-accent: #C6CDD6;
+  --color-brand-surface: #000000;
 
   --breakpoint-xs: 400px;
 
